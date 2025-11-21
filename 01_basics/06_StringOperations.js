@@ -1,0 +1,10 @@
+let name="Akshit Juneja";
+console.log(name.length);
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+console.log(name.includes("Juneja"));
+console.log(name.startsWith("Akshit"));
+console.log(name.endsWith("ja"));
+console.log(name.indexOf("Juneja"));
+console.log(name.split(" "));
+console.log(name.replace("Akshit","Akki"));
