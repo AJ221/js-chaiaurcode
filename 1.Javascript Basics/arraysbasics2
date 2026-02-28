@@ -1,0 +1,36 @@
+const marvelHeros=["Ironman","Loki","Thor","Spiderman","Docter Strange"];
+console.log(marvelHeros);
+const dcHeros=new Array("Superman","Batman","Flash","Green Lantern");
+console.log(dcHeros);
+
+
+//not the list merge but the array merge
+// marvelHeros.push(dcHeros)
+// console.log(marvelHeros); 
+
+//here we are merging the two arrays and creating a new array
+const allHeros=marvelHeros.concat(dcHeros);
+console.log("concat operation on marvel hers with dc heros : ",allHeros);``
+
+//without using concat we can also merge two arrays using spread operator
+const allHeros2=[...marvelHeros,...dcHeros];
+console.log("using spread operator to merge two arrays : ",allHeros2);
+
+const allHeros3=[...marvelHeros,"Deadpool",["Wolverine","Cyclops",["deadpool","greenlantern"]],...dcHeros];
+
+console.log("using spread operator to merge two arrays with some extra element : ",allHeros3);
+
+const fullHerosList=allHeros3.flat(Infinity);
+console.log("using flat method to flatten the array : ",fullHerosList);
+
+
+const isNameArray="Akshit";
+console.log(Array.isArray(isNameArray));
+
+console.log(Array.from("ajuneja"));
+
+//create array of keys from an object
+const obj={name:"Akshit",age:23};
+// console.log(Array.from(Object.keys(obj)));
+ 
+console.log(Array.from(Object.values({name:"Akshit",age:23})));    
